@@ -1,3 +1,3 @@
-$("img.firstPic").click( function() {
-  ("img.firstPic").removeClass(".firstPic");
+$('img.firstPic').on('click', function() {
+  $(this).addClass('hidden');
 });
