@@ -1,0 +1,81 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+body {
+  background: #fafafa;
+  font-family: "Adobe Caslon Pro", Georgia, serif;
+  color: #333;
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+}
+
+
+.container {
+  max-width: 1024px;
+  background-color: HSLA(196, 27%, 20%, 1);
+  margin: 0 auto;
+  padding: 1%;
+  overflow: auto;
+  font-size: 1.8em;
+  border-radius: .5em;
+  @include outer-container;
+  .leftUnit { // "sidebar"
+    background-color: HSLA(80, 72%, 52%, 1);
+    padding: 1.5%;
+    float: left;
+  }
+  .rightUnit {
+    background-color: HSLA(262, 94%, 74%, 1);
+    padding: 1.5%;
+    float: right;
+    img {
+      float: right;
+      border: 1px solid HSLA(338, 95%, 56%, 1);
+      box-shadow: 3px 3px 3px HSLA(0, 0%, 95%, .5);
+      margin-bottom: 5px;
+    }
+  }
+  .theCageOfWonders {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+  }
+}
+ul.cage {
+  width: 75%;
+  margin: 0 auto;
+  clear: both;
+  padding: 5%;
+}
+li.block {
+  @include span-columns(3);
+  @include omega(4n);
+  border: 1px solid HSLA(338, 95%, 56%, 1);
+  box-shadow: 3px 3px 3px HSLA(0, 0%, 95%, .5);
+  margin-bottom: 5px;
+  transition: transform 5s, scale 5s;
+  &:hover {
+    transform: rotate(200deg) scale(3);
+    transition: transform 5s, scale 5s;
+  }
+}
+.shown {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+@media (min-width: 600px) {
+  .container {
+    .rightUnit {
+      width: 65%;
+    }
+    .leftUnit {
+      width: 35%;
+    }
+  }
+}
