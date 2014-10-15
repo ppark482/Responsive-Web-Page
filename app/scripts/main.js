@@ -1,3 +1,3 @@
-$('img.firstPic').on('click', function() {
-  $(this).addClass('hidden');
+$('.firstPic').on('click', function() {
+  $(this).css('transform', 'rotate(180deg)');
 });
