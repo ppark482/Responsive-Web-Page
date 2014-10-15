@@ -27,6 +27,10 @@ img {
     background-color: HSLA(80, 72%, 52%, 1);
     padding: 1.5%;
     float: left;
+    .meatPlate {
+      border: 1px solid HSLA(338, 95%, 56%, 1);
+      box-shadow: 3px 3px 3px HSLA(0, 0%, 95%, .5);
+    }
   }
   .rightUnit {
     background-color: HSLA(262, 94%, 74%, 1);
@@ -61,7 +65,7 @@ li.block {
   &:hover {
     transform: rotate(200deg) scale(3);
     transition: transform 5s, scale 5s;
-}
+  }
 }
 .shown {
   display: block;
