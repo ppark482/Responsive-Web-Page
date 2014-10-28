@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## Responsive Web Page
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+* Used jQuery, JavaScript and Nick Cage to create a fully mobile responsive page
